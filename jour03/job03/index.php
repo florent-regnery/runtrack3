@@ -11,7 +11,7 @@
 </head>
 
 <body>
-<table id="maTable">
+    <table id="maTable">
         <tr>
             <td id="1"></td>
             <td id="2"></td>
@@ -27,7 +27,7 @@
             <td id="8"></td>
             <td id="9"></td>
         </tr>
-    
+
     </table>
 
 </body>

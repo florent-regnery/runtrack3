@@ -1,13 +1,9 @@
-function OnClickBtn() {
-  $("p").show();
-  $("#supprimer").show();
-}
-
-function hideBtn() {
-  $("*").hide();
-}
-
-$("p").hide();
-$("#supprimer").hide();
-$("#button").click(OnClickBtn);
-$("#supprimer").click(hideBtn);
+jQuery(document).ready(function ($) {
+  $("p").hide();
+  $("#button").click(function () {
+    $("p").show();
+  });
+  $("#cacher").click(function () {
+    $("p").hide();
+  });
+});
