@@ -1,7 +1,9 @@
-var textarea = document.getElementById("keylogger");
-
-document.addEventListener("keypress", function () {
-  var ancienmot = textarea.value;
-  var lettre = event.key;
-  textarea.value = ancienmot + lettre;
+document.addEventListener("DOMContentLoaded", () => {
+  let key = "";
+  
+  window.addEventListener("keydown", function (event) {
+    let value = document.getElementById("keylogger").value;
+    key = value + event.key;
+    document.getElementById("keylogger").value = key;
+  });
 });

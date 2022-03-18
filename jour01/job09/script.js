@@ -15,5 +15,4 @@ function tri(numbers, order) {
     return temp;
   }
 }
-tableau = [1, 2, 13, 14, 50];
-console.log(tri(tableau, asc));
+

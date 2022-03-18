@@ -1,9 +1,16 @@
-function addone() {
-  var compteur = document.getElementById("compteur");
-  compteur.innerHTML = nbre++;
-}
 
-var button = document.getElementById("button");
+document.addEventListener('DOMContentLoaded', () => {
+  function addone() {
 
-button.addEventListener("click", addone);
-var nbre = compteur.innerHTML;
+      let compt = document.getElementById("compteur").innerHTML;
+      document.getElementById("compteur").innerHTML = ++compt;
+  }
+
+  let bouton = document.querySelector('#button')
+  bouton.addEventListener("click", (e) => {
+      addone()
+      console.log(addone)
+  })
+  }
+
+)
